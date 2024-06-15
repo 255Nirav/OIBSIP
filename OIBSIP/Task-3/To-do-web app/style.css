@@ -1,0 +1,145 @@
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4d4ea;
+}
+
+.wrapper {
+    background: #eedddd;
+    max-width: 400px;
+    width: 700px;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: center;
+}
+
+.wrapper header {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #3a1f1f;
+}
+
+#pendingTasks h2 {
+    display: flex;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #a88b8b;
+}
+
+#completedTasks h2 {
+    display: flex;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #a88b8b;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #160101;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    width: auto;
+    padding: 5px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+h2 input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f3f8f8;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+.task-list {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.task-list h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.task-list ul {
+    list-style: none;
+}
+
+.task-list li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.task-list li:hover {
+    background-color: #f1f1f1;
+}
+
+.task-list li .complete-btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #f5f1f1;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-list li .complete-btn:hover {
+    background-color: #0056b3;
+}
